@@ -1,0 +1,14 @@
+A:\Pos Graduação\RPG_Wiki-master\RPGWiki.Shared.Models\bin\Debug\net7.0\RPGWiki.Shared.Models.deps.json
+A:\Pos Graduação\RPG_Wiki-master\RPGWiki.Shared.Models\bin\Debug\net7.0\RPGWiki.Shared.Models.runtimeconfig.json
+A:\Pos Graduação\RPG_Wiki-master\RPGWiki.Shared.Models\bin\Debug\net7.0\RPGWiki.Shared.Models.dll
+A:\Pos Graduação\RPG_Wiki-master\RPGWiki.Shared.Models\bin\Debug\net7.0\RPGWiki.Shared.Models.pdb
+A:\Pos Graduação\RPG_Wiki-master\RPGWiki.Shared.Models\obj\Debug\net7.0\RPGWiki.Shared.Models.csproj.AssemblyReference.cache
+A:\Pos Graduação\RPG_Wiki-master\RPGWiki.Shared.Models\obj\Debug\net7.0\RPGWiki.Shared.Models.GeneratedMSBuildEditorConfig.editorconfig
+A:\Pos Graduação\RPG_Wiki-master\RPGWiki.Shared.Models\obj\Debug\net7.0\RPGWiki.Shared.Models.AssemblyInfoInputs.cache
+A:\Pos Graduação\RPG_Wiki-master\RPGWiki.Shared.Models\obj\Debug\net7.0\RPGWiki.Shared.Models.AssemblyInfo.cs
+A:\Pos Graduação\RPG_Wiki-master\RPGWiki.Shared.Models\obj\Debug\net7.0\RPGWiki.Shared.Models.csproj.CoreCompileInputs.cache
+A:\Pos Graduação\RPG_Wiki-master\RPGWiki.Shared.Models\obj\Debug\net7.0\RPGWiki.Shared.Models.dll
+A:\Pos Graduação\RPG_Wiki-master\RPGWiki.Shared.Models\obj\Debug\net7.0\refint\RPGWiki.Shared.Models.dll
+A:\Pos Graduação\RPG_Wiki-master\RPGWiki.Shared.Models\obj\Debug\net7.0\RPGWiki.Shared.Models.pdb
+A:\Pos Graduação\RPG_Wiki-master\RPGWiki.Shared.Models\obj\Debug\net7.0\RPGWiki.Shared.Models.genruntimeconfig.cache
+A:\Pos Graduação\RPG_Wiki-master\RPGWiki.Shared.Models\obj\Debug\net7.0\ref\RPGWiki.Shared.Models.dll

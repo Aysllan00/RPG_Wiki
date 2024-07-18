@@ -1,0 +1,17 @@
+C:\Users\Ayslan\Documents\Pos-Graduacao\DM106\RPGWiki\RPGWiki.Shared.Data\bin\Debug\net6.0\RPGWiki.Shared.Data.deps.json
+C:\Users\Ayslan\Documents\Pos-Graduacao\DM106\RPGWiki\RPGWiki.Shared.Data\bin\Debug\net6.0\RPGWiki.Shared.Data.dll
+C:\Users\Ayslan\Documents\Pos-Graduacao\DM106\RPGWiki\RPGWiki.Shared.Data\bin\Debug\net6.0\RPGWiki.Shared.Data.pdb
+C:\Users\Ayslan\Documents\Pos-Graduacao\DM106\RPGWiki\RPGWiki.Shared.Data\obj\Debug\net6.0\RPGWiki.Shared.Data.csproj.AssemblyReference.cache
+C:\Users\Ayslan\Documents\Pos-Graduacao\DM106\RPGWiki\RPGWiki.Shared.Data\obj\Debug\net6.0\RPGWiki.Shared.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ayslan\Documents\Pos-Graduacao\DM106\RPGWiki\RPGWiki.Shared.Data\obj\Debug\net6.0\RPGWiki.Shared.Data.AssemblyInfoInputs.cache
+C:\Users\Ayslan\Documents\Pos-Graduacao\DM106\RPGWiki\RPGWiki.Shared.Data\obj\Debug\net6.0\RPGWiki.Shared.Data.AssemblyInfo.cs
+C:\Users\Ayslan\Documents\Pos-Graduacao\DM106\RPGWiki\RPGWiki.Shared.Data\obj\Debug\net6.0\RPGWiki.Shared.Data.csproj.CoreCompileInputs.cache
+C:\Users\Ayslan\Documents\Pos-Graduacao\DM106\RPGWiki\RPGWiki.Shared.Data\obj\Debug\net6.0\RPGWiki.Shared.Data.dll
+C:\Users\Ayslan\Documents\Pos-Graduacao\DM106\RPGWiki\RPGWiki.Shared.Data\obj\Debug\net6.0\refint\RPGWiki.Shared.Data.dll
+C:\Users\Ayslan\Documents\Pos-Graduacao\DM106\RPGWiki\RPGWiki.Shared.Data\obj\Debug\net6.0\RPGWiki.Shared.Data.pdb
+C:\Users\Ayslan\Documents\Pos-Graduacao\DM106\RPGWiki\RPGWiki.Shared.Data\obj\Debug\net6.0\ref\RPGWiki.Shared.Data.dll
+C:\Users\Ayslan\Documents\Pos-Graduacao\DM106\RPGWiki\RPGWiki.Shared.Data\bin\Debug\net6.0\RPGWiki.Shared.Data.runtimeconfig.json
+C:\Users\Ayslan\Documents\Pos-Graduacao\DM106\RPGWiki\RPGWiki.Shared.Data\bin\Debug\net6.0\RPGWiki.Shared.Models.dll
+C:\Users\Ayslan\Documents\Pos-Graduacao\DM106\RPGWiki\RPGWiki.Shared.Data\bin\Debug\net6.0\RPGWiki.Shared.Models.pdb
+C:\Users\Ayslan\Documents\Pos-Graduacao\DM106\RPGWiki\RPGWiki.Shared.Data\obj\Debug\net6.0\RPGWiki.Shared.Data.csproj.CopyComplete
+C:\Users\Ayslan\Documents\Pos-Graduacao\DM106\RPGWiki\RPGWiki.Shared.Data\obj\Debug\net6.0\RPGWiki.Shared.Data.genruntimeconfig.cache

@@ -1,0 +1,14 @@
+C:\Users\Ayslan\Documents\Pos-Graduacao\DM106\RPGWiki\RPGWiki.Shared.Models\bin\Debug\net6.0\RPGWiki.Shared.Models.deps.json
+C:\Users\Ayslan\Documents\Pos-Graduacao\DM106\RPGWiki\RPGWiki.Shared.Models\bin\Debug\net6.0\RPGWiki.Shared.Models.dll
+C:\Users\Ayslan\Documents\Pos-Graduacao\DM106\RPGWiki\RPGWiki.Shared.Models\bin\Debug\net6.0\RPGWiki.Shared.Models.pdb
+C:\Users\Ayslan\Documents\Pos-Graduacao\DM106\RPGWiki\RPGWiki.Shared.Models\obj\Debug\net6.0\RPGWiki.Shared.Models.csproj.AssemblyReference.cache
+C:\Users\Ayslan\Documents\Pos-Graduacao\DM106\RPGWiki\RPGWiki.Shared.Models\obj\Debug\net6.0\RPGWiki.Shared.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ayslan\Documents\Pos-Graduacao\DM106\RPGWiki\RPGWiki.Shared.Models\obj\Debug\net6.0\RPGWiki.Shared.Models.AssemblyInfoInputs.cache
+C:\Users\Ayslan\Documents\Pos-Graduacao\DM106\RPGWiki\RPGWiki.Shared.Models\obj\Debug\net6.0\RPGWiki.Shared.Models.AssemblyInfo.cs
+C:\Users\Ayslan\Documents\Pos-Graduacao\DM106\RPGWiki\RPGWiki.Shared.Models\obj\Debug\net6.0\RPGWiki.Shared.Models.csproj.CoreCompileInputs.cache
+C:\Users\Ayslan\Documents\Pos-Graduacao\DM106\RPGWiki\RPGWiki.Shared.Models\obj\Debug\net6.0\RPGWiki.Shared.Models.dll
+C:\Users\Ayslan\Documents\Pos-Graduacao\DM106\RPGWiki\RPGWiki.Shared.Models\obj\Debug\net6.0\refint\RPGWiki.Shared.Models.dll
+C:\Users\Ayslan\Documents\Pos-Graduacao\DM106\RPGWiki\RPGWiki.Shared.Models\obj\Debug\net6.0\RPGWiki.Shared.Models.pdb
+C:\Users\Ayslan\Documents\Pos-Graduacao\DM106\RPGWiki\RPGWiki.Shared.Models\obj\Debug\net6.0\ref\RPGWiki.Shared.Models.dll
+C:\Users\Ayslan\Documents\Pos-Graduacao\DM106\RPGWiki\RPGWiki.Shared.Models\bin\Debug\net6.0\RPGWiki.Shared.Models.runtimeconfig.json
+C:\Users\Ayslan\Documents\Pos-Graduacao\DM106\RPGWiki\RPGWiki.Shared.Models\obj\Debug\net6.0\RPGWiki.Shared.Models.genruntimeconfig.cache
