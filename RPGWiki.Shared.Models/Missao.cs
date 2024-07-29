@@ -18,7 +18,7 @@ namespace RPGWiki.Shared.Models
         public int Id { get; set; }
         public string Name { get; set; }
         public int Dificuldade { get; set; }
-        public virtual ICollection<Jogador> jogadores { get; set; } = new List<Jogador>();
+        public virtual ICollection<Jogador> jogadores { get; set; }
 
         public override string ToString()
         {
