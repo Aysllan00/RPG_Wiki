@@ -19,7 +19,8 @@ namespace RPGWiki_Console
         public string Nome { get; set; }
         public int Moedas { get; set; }
         public virtual ICollection<Personagem> personagens { get; set; } = new List<Personagem>();
-        public virtual ICollection<Missao> missoes { get; set; } = new List<Missao>();
+        public virtual ICollection<Missao> missoes { get; set; }
+        public virtual ICollection<Equipamento> equipamentos { get; set; } = new List<Equipamento>();
 
         public void AddPersonagem(Personagem personagem) {
         
@@ -46,6 +47,22 @@ namespace RPGWiki_Console
 
             Console.WriteLine($"Missão de {Nome}");
             foreach (var p in missoes)
+            {
+                Console.WriteLine(p);
+            }
+        }
+
+        public void AddEquipamento(Equipamento equipamento)
+        {
+
+            equipamentos.Append(equipamento);
+        }
+
+        public void ShowEquipamento()
+        {
+
+            Console.WriteLine($"Equipamento de {Nome}");
+            foreach (var p in equipamentos)
             {
                 Console.WriteLine(p);
             }

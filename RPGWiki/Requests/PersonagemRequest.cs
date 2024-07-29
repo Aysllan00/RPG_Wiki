@@ -1,4 +1,4 @@
 ﻿namespace RPGWiki.Requests
 {
-    public record PersonagemRequest(String name);
+    public record PersonagemRequest(string name);
 }

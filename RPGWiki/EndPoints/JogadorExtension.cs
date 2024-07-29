@@ -2,6 +2,7 @@
 using RPGWiki.Requests;
 using RPGWiki.Responses;
 using RPGWiki.Shared.Data.BD;
+using RPGWiki.Shared.Models;
 using RPGWiki_Console;
 using System.Runtime.CompilerServices;
 
@@ -11,31 +12,41 @@ namespace RPGWiki.EndPoints
     {
         public static void AddEndPointsJogador(this WebApplication app)
         {
+            var groupBuilder = app.MapGroup("jogadores").RequireAuthorization().WithTags("Jogador");
 
-            app.MapGet("/Jogador", ([FromServices] DAL<Jogador> dal) => {
+            groupBuilder.MapGet("", ([FromServices] DAL<Jogador> dal) =>
+            {
 
                 var JogadorList = dal.Read();
-                if(JogadorList is null) return Results.NotFound();
+                if (JogadorList is null) return Results.NotFound();
 
                 var jogadorResponseList = EntityListToResponseList(JogadorList);
                 return Results.Ok(jogadorResponseList);
             });
 
-            app.MapGet("/Jogador/{id}", ([FromServices] DAL<Jogador> dal, int id) => {
+            groupBuilder.MapGet("/{id}", ([FromServices] DAL<Jogador> dal, int id) =>
+            {
 
                 var jogador = dal.ReadByName(h => h.Id == id);
                 if (jogador is null) return Results.NotFound();
                 return Results.Ok(EntityToResponse(jogador));
             });
 
-            app.MapPost("/Jogador", ([FromServices] DAL<Jogador> dal, [FromBody] JogadorRequest jogadorRequest) => {
+            groupBuilder.MapPost("", ([FromServices] DAL<Jogador> dal, [FromServices] DAL<Missao> dalMissao, [FromBody] JogadorRequest jogadorRequest) =>
+            {
 
-                var jogador = new Jogador(jogadorRequest.Nome, jogadorRequest.Moedas);
+                var jogador = new Jogador(jogadorRequest.Nome, jogadorRequest.Moedas)
+                {
+
+                    missoes = jogadorRequest.Missoes is not null ? MissaoRequestConverter(jogadorRequest.Missoes, dalMissao) : new List<Missao>()
+                };
+
                 dal.Create(jogador);
                 return Results.Ok();
             });
 
-            app.MapDelete("/Jogador/{id}", ([FromServices] DAL<Jogador> dal, int id) => {
+            groupBuilder.MapDelete("/{id}", ([FromServices] DAL<Jogador> dal, int id) =>
+            {
 
                 var jogador = dal.ReadByName(h => h.Id == id);
                 if (jogador is null)
@@ -47,7 +58,8 @@ namespace RPGWiki.EndPoints
 
             });
 
-            app.MapPut("/Jogador", ([FromServices] DAL<Jogador> dal, [FromBody] JogadorEditRequest jogadorEditRequest) => {
+            groupBuilder.MapPut("", ([FromServices] DAL<Jogador> dal, [FromBody] JogadorEditRequest jogadorEditRequest) =>
+            {
 
                 var jogadorToEdit = dal.ReadByName(h => h.Id == jogadorEditRequest.Id);
                 if (jogadorToEdit is null)
@@ -61,6 +73,26 @@ namespace RPGWiki.EndPoints
             });
 
         }
+
+        private static List<Missao> MissaoRequestConverter(ICollection<MissaoRequest> missoes, DAL<Missao> dalMissao)
+        {
+            var missaoList = new List<Missao>();
+            foreach (var missao in missoes)
+            {
+                var entity = RequestToEntity(missao);
+                var m = dalMissao.ReadByName(a => a.Name.ToUpper().Equals(entity.Name.ToUpper()));
+                if (m is not null) {
+                    missaoList.Add(m);
+                }
+                else { missaoList.Add(entity);}
+            }
+            return missoes.Select(e => RequestToEntity(e)).ToList();
+        }
+
+        private static Missao RequestToEntity(MissaoRequest e)
+        {
+            return new Missao(e.Name, e.Dificuldade);
+        }  
 
         private static ICollection<JogadorResponse> EntityListToResponseList(IEnumerable<Jogador> jogadorList)
         {

@@ -11,8 +11,10 @@ namespace RPGWiki.EndPoints
 
         public static void AddPointsPersonagem(this WebApplication app)
         {
+            var groupBuilder = app.MapGroup("personagens").RequireAuthorization().WithTags("Personagem");
 
-            app.MapGet("/Personagem", ([FromServices] DAL<Personagem> dal) => {
+            groupBuilder.MapGet("", ([FromServices] DAL<Personagem> dal) =>
+            {
 
                 var personagemList = dal.Read();
                 if (personagemList is null) return Results.NotFound();
@@ -21,21 +23,24 @@ namespace RPGWiki.EndPoints
                 return Results.Ok(personagemResponseList);
             });
 
-            app.MapGet("/Personagem/{id}", ([FromServices] DAL<Personagem> dal, int id) => {
+            groupBuilder.MapGet("/{id}", ([FromServices] DAL<Personagem> dal, int id) =>
+            {
 
                 var personagem = dal.ReadByName(h => h.Id == id);
                 if (personagem is null) return Results.NotFound();
                 return Results.Ok(EntityToResponse(personagem));
             });
 
-            app.MapPost("/Personagem", ([FromServices] DAL<Personagem> dal, [FromBody] PersonagemRequest personagemRequest) => {
+            groupBuilder.MapPost("", ([FromServices] DAL<Personagem> dal, [FromBody] PersonagemRequest personagemRequest) =>
+            {
 
                 var personagem = new Personagem(personagemRequest.name);
                 dal.Create(personagem);
                 return Results.Ok();
             });
 
-            app.MapDelete("/Personagem/{id}", ([FromServices] DAL<Personagem> dal, int id) => {
+            groupBuilder.MapDelete("/{id}", ([FromServices] DAL<Personagem> dal, int id) =>
+            {
 
                 var personagem = dal.ReadByName(h => h.Id == id);
                 if (personagem is null)
@@ -47,7 +52,8 @@ namespace RPGWiki.EndPoints
 
             });
 
-            app.MapPut("/Personagem", ([FromServices] DAL<Personagem> dal, [FromBody] PersonagemEditRequest personagemEditRequest) => {
+            groupBuilder.MapPut("", ([FromServices] DAL<Personagem> dal, [FromBody] PersonagemEditRequest personagemEditRequest) =>
+            {
 
                 var personagemToEdit = dal.ReadByName(h => h.Id == personagemEditRequest.Id);
                 if (personagemToEdit is null)
